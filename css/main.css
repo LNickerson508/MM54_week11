@@ -1,0 +1,89 @@
+/*--CSS Reset--*/
+
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header > h1 {
+    text-align: center;
+    padding: 8px;
+}
+
+article {
+    width: 400px;
+    border: 4px solid white;
+    border-radius: 8px;
+    margin: 10px 12px;
+    text-align: left;
+}
+
+article > h2 {
+    color: gray;
+    padding: 4px 8px;
+
+}
+
+article:first-of-type {
+    border: 4px solid grey;
+}
+
+#in-progress {
+    border: 4px solid red;
+}
+
+#in-progress h2 {
+    color: red;
+}
+
+#done {
+    border: 4px solid green;
+}
+
+#done h2 {
+    color: green;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 6px 8px;
+    text-transform: uppercase;
+}
+
+.to-do-ul li:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.in-progress-ul li:nth-child(odd) {
+    background-color: rgba(255, 0, 0, 0.15);
+}
+
+.done-ul li:nth-child(odd) {
+    background-color: rgba(0, 255, 0, 0.15);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid red;
+}
